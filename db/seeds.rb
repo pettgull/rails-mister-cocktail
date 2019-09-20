@@ -10,8 +10,8 @@ require 'faker'
 
 puts 'stocking the shelves'
 10.times do
-  Dose.create!(
-    description: Faker::Measurement.metric_volume(amount: 0.5)
+  Ingredient.create!(
+    name: Faker::Food.ingredient
   )
 end
 puts 'stocking is done'
